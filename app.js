@@ -8,7 +8,7 @@ var methodOverride = require('method-override'); //used to manipulate POST
 var engine = require('ejs-locals');
 
 
-
+var dayData = require('./routes/dayDatas');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var app = express();
@@ -27,14 +27,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-app.use('/users', users);
+
 
 ///extra
 var db = require('./model/db');
-var dayData = require('./routes/dayDatas');
 var day = require('./model/dayDatas');
 var goal = require('./model/goal');
+
+
+//route use
+app.use('/routes', routes);
+app.use('/users', users);
 app.use('/dayData', dayData);
 
 // catch 404 and forward to error handler
@@ -68,5 +71,11 @@ app.use(function(err, req, res, next) {
   });
 });
 
+var mongoose = require('mongoose');
+var MongoDB = mongoose.connect('mongodb://localhost:27017/fitbit').connection;
 
+MongoDB.on('error', function(err) { console.log(err.message); console.log(err.message);});
+MongoDB.once('open', function() {
+  console.log("mongodb connection open");
+});
 module.exports = app;

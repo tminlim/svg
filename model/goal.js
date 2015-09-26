@@ -12,4 +12,4 @@ var goalSchema  = new mongoose.Schema({
     caloriesInOut: Array
 });
 
-mongoose.model('goal',goalSchema);
+//mongoose.model('goal',goalSchema);

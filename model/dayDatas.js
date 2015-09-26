@@ -32,9 +32,9 @@ var dateByDaySchema = new Schema({
     food: [{ type: Schema.Types.ObjectId, ref: 'food' }]
 });
 
-var sleep = mongoose.model('sleep', sleepSchema);
-var act = mongoose.model('act', actSchema);
-var food = mongoose.model('food', foodSchema);
-exports.dateByDay= mongoose.model('dateByDay', dateByDaySchema);
+//var sleep = mongoose.model('sleep', sleepSchema);
+//var act = mongoose.model('act', actSchema);
+//var food = mongoose.model('food', foodSchema);
+//exports.dateByDaySchema = mongoose.model('dateByDaySchema', dateByDaySchema);
 
 

@@ -6,6 +6,8 @@ var express = require('express'),
     mongoose = require('mongoose'), //mongo connection
     bodyParser = require('body-parser'); //parses information from POST
     methodOverride = require('method-override'); //used to manipulate POST
+var dayDatas = require('../model/dayDatas.js');
+var models = require('../model/models.js');
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride(function(req, res){
@@ -17,25 +19,29 @@ router.use(methodOverride(function(req, res){
     }
 }));
 
-router.route('/')
-    //GET all data by day
-    .get(function(req, res, next) {
-        //retrieve all data from Mongo fitbit collection
-        var real;
-        var goal;
-        mongoose.model('dateByDay').find({}, function (err, dateByDay) {
-            if (err) {
-                return console.error(err);
-            } else {
-                console.log("ddddddd" + dateByDay)
-                res.render('index.ejs', {
-                    title: "hello world",
-                    real: dateByDay,
-                    goal: goal
-                });
-            }
-        });
 
+
+//router.get("/clear", function(req, res) {
+//    console.log("clear");
+//    models.dataByDay.find({}, function (err, data){
+//        console.log(data);
+//        //res.render('index', {title: "Express", real: dateByDay});
+//    });
+//});
+
+router.get("/dd", function(req, res){
+    models.users.find({}, function(err, data){
+        console.log("?");
+     console.log(data);
+    });
+});
+
+router.get("/hello", function(req, res){
+    models.dataByDay.find({}, function(err, data){
+        console.log("!");
+        console.log(data);
+    });
+});
 //router.route('/')
 //    //GET all data by day
 //    .get(function(req, res, next) {
@@ -55,21 +61,21 @@ router.route('/')
 //            }
 //        });
 
+        //
+        //model('goal').find({}, function (err, goals ) {
+        //    if (err) {
+        //        return console.error(err);
+        //    } else {
+        //        goal = goals.burnedCalories;
+        //        console.log("hessssss");
+        //
+        //        //goal = goals;
+        //
+        //    }
+        //});
 
-                mongoose.model('goal').find({}, function (err, goals ) {
-            if (err) {
-                return console.error(err);
-            } else {
-                goal = goals.burnedCalories;
-                console.log("hessssss");
-
-                //goal = goals;
-
-            }
-        });
 
 
 
-    })
 
 module.exports = router;
