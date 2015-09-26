@@ -1,0 +1,9 @@
+[{
+    "goals":{
+        "burnedCalories":2826,
+        "distance":8.05,
+        "floors":150,
+        "steps":10000,
+        "caloriesInOut": ["UNDER","GOAL MET","OVER"]
+        }
+}]

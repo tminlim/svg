@@ -1,0 +1,156 @@
+
+[{
+    "date": "Sunday, 2015-09-13",
+    "sleep": {
+      "asleep": 1,
+      "awake": 12,
+      "sleepEfficiency": 91,
+      "actualSleepTime": "8:05",
+      "enterBed": "23:20",
+      "leftBed": "9:45"
+    },
+    "activities": {
+      "distance": 4.33,
+      "activeMins": 154,
+      "floors": 226,
+      "steps": 946,
+      "burnedCalories": 1801
+    },
+    "food": {
+      "toDrink": 8,
+      "caloriesIn": 3000
+    }
+  },
+  {
+    "date": "Monday, 2015-09-14",
+    "sleep": {
+      "asleep": 20,
+      "awake": 18,
+      "sleepEfficiency": 30,
+      "actualSleepTime": "4:12",
+      "enterBed": "3:50",
+      "leftBed": "11:10"
+    },
+    "activities": {
+      "distance": 1.44,
+      "activeMins": 20,
+      "floors": 12,
+      "steps": 8000,
+      "burnedCalories": 1300
+    },
+    "food": {
+      "toDrink": 12,
+      "caloriesIn": 2200
+    }
+  },
+  {
+    "date": "Tuesday, 2015-09-15",
+    "sleep": {
+      "asleep": 2,
+      "awake": 3,
+      "sleepEfficiency": 70,
+      "actualSleepTime": "5:50",
+      "enterBed": "22:05",
+      "leftBed": "7:30"
+    },
+    "activities": {
+      "distance": 12.5,
+      "activeMins": 25,
+      "floors": 80,
+      "steps": 17000,
+      "burnedCalories": 2300
+    },
+    "food": {
+      "toDrink": 14,
+      "caloriesIn": 1800
+    }
+  },
+  {
+    "date": "Wednesday, 2015-09-16",
+    "sleep": {
+      "asleep": 5,
+      "awake": 1,
+      "sleepEfficiency": 91,
+      "actualSleepTime": "8:10",
+      "enterBed": "23:50",
+      "leftBed": "8:00"
+    },
+    "activities": {
+      "distance": 4.33,
+      "activeMins": 154,
+      "floors": 226,
+      "steps": 946,
+      "burnedCalories": 601
+    },
+    "food": {
+      "toDrink": 8,
+      "caloriesIn": 3000
+    }
+  },
+  {
+    "date": "Thursday, 2015-09-17",
+    "sleep": {
+      "asleep": 0,
+      "awake": 1,
+      "sleepEfficiency": 99,
+      "actualSleepTime": "8:20",
+      "enterBed": "20:05",
+      "leftBed": "4:30"
+    },
+    "activities": {
+      "distance": 4.33,
+      "activeMins": 154,
+      "floors": 226,
+      "steps": 946,
+      "burnedCalories": 1350
+    },
+    "food": {
+      "toDrink": 8,
+      "caloriesIn": 2500
+    }
+  },
+  {
+    "date": "Friday, 2015-09-18",
+    "sleep": {
+      "asleep": 8,
+      "awake": 2,
+      "sleepEfficiency": 80,
+      "actualSleepTime": "7:20",
+      "enterBed": "22:33",
+      "leftBed": "9:20"
+    },
+    "activities": {
+      "distance": 2.5,
+      "activeMins": 10,
+      "floors": 30,
+      "steps": 13040,
+      "burnedCalories": 2060
+    },
+    "food": {
+      "toDrink": 5,
+      "caloriesIn": 1500
+    }
+  },
+{
+    "date": "Saturday, 2015-09-19",
+    "sleep": {
+      "asleep": 25,
+      "awake": 5,
+      "sleepEfficiency": 70,
+      "actualSleepTime": "11:13",
+      "enterBed": "2:30",
+      "leftBed": "15:06"
+    },
+    "activities": {
+      "distance": 12.8,
+      "activeMins": 50,
+      "floors": 400,
+      "steps": 30020,
+      "burnedCalories": 2990
+    },
+    "food": {
+      "toDrink": 10,
+      "caloriesIn": 2200
+    }
+  }
+  ]
